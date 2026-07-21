@@ -41,7 +41,7 @@ Quiz/
 <p>Alongside friends and family test running my quiz to check for accessibility and errors, I utilised the below websites to test code written in HTML, CSS and JavaScript.</p>
 
 ------------------------
-<br>HTML testing was done through https://validator.w3.rg/#validate\_by\_input.
+<br>HTML testing was done through [https://validator.w3.rg/#validate\_by\_input](https://validator.w3.org/detailed.html#validate-by-input).
 
 **Initial testing showed multiple warnings:**
 
@@ -75,16 +75,16 @@ To aid with accessibility, this was fixed by adding a hidden header.
 
 ------------------------------------------
 
-CSS testing was done through https://jigsaw.w3.org/css-validator/#validate_by_input.
+CSS testing was done through [https://jigsaw.w3.org/css-validator/#validate_by_input](https://jigsaw.w3.org/css-validator/validator).
 
 
 ------------------------------------------
 
-JavaScript testing was done through https://jshint.com/.
+JavaScript testing was done through [https://jshint.com/](https://jshint.com/).
 
 ------------------------------------------
 
-Color contrast testing was done through https://coolors.co/contrast-checker/111111-ffffff.
+Color contrast testing was done through [https://coolors.co/contrast-checker/111111-ffffff](https://coolors.co/contrast-checker/111111-ffffff).
 
 -----------------------------------------
 
