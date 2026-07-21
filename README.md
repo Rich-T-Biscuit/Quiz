@@ -93,6 +93,10 @@ Color contrast testing was done through [https://coolors.co/contrast-checker/111
 
 -----------------------------------------
 
-## License
+## Lighthouse test for performance??
+
+----------------------------------------
 
 ## Author + Link to GitHub
+
+## Credits
