@@ -85,9 +85,11 @@ JavaScript testing was done through [https://jshint.com/](https://jshint.com/).
 Color contrast testing was done through [https://coolors.co/contrast-checker/111111-ffffff](https://coolors.co/contrast-checker/111111-ffffff).
 
 <p>Check Card</p>
-![Color Contrast - Card](images/Color_Contrast_Check_Card.gif)
+
+![Color Contrast - Card](images/Color_Card.gif)
 <p>Background</p>
-![Color Contrast - Background](images/Color_Contrast_Check_Subtitle.gif)
+
+![Color Contrast - Background](images/Color_Subtitle.gif)
 
 -----------------------------------------
 
