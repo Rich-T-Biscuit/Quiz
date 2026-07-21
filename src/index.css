@@ -1,0 +1,194 @@
+:root{
+	/* Colors used throughout the stylesheet */
+	/* Use the same dark backdrop as the welcome overlay so the quiz and
+	   results screens share the same page background */
+	--bg: #0f172a; /* background color (matches rgba(15,23,42) used by welcome overlay) */
+	--card: #ffffff; /* panel background */
+	--accent: #2b6cb0; /* primary action color for the buttons */
+	--muted: #6b7280; /* muted text used on white cards */
+	--on-bg: #f8fafc; /* primary text color for the background */
+	--muted-on-bg: #e5e7eb; /* secondary text color for the background */
+}
+
+/* Use border-box sizing everywhere to make widths/padding predictable */
+*{box-sizing:border-box}
+
+/* Base page and typography */
+body{
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; /* system font stack */
+	margin: 0; /* remove default body margin */
+	background: var(--bg); /* dark page background */
+	color: #111; /* default text color for content inside white cards */
+}
+
+.page{
+	max-width: 820px; /* constrain content for readability */
+	margin: 36px auto; /* center vertically with top/bottom margin */
+	padding: 24px; /* inner spacing */
+}
+
+header{
+	margin-bottom: 18px; /* spacing between header and quiz */
+}
+
+.page header h1{
+	color: var(--on-bg); /* make the main title legible on the dark page background */
+	margin: 0; /* reset heading margin */
+}
+
+.subtitle{
+	color: var(--muted-on-bg); /* subdued subtitle color on the dark background */
+	margin-top: 6px; /* small gap beneath the title */
+}
+
+/* The main quiz card that sits on a white background */
+.quiz-app{
+	background: var(--card); /* white card */
+	padding: 20px; /* inner spacing */
+	border-radius: 10px; /* rounded corners */
+	box-shadow: 0 6px 18px rgba(10,10,10,0.06); /* subtle elevation */
+}
+
+.question-card{
+	min-height: 180px; /* reserve vertical space for question content */
+}
+
+.question-title{
+	font-size: 1.15rem; /* slightly larger than body text */
+	margin-bottom: 12px; /* spacing to options */
+}
+
+/* Space between the question meta (e.g. "Question 1 of 12") and the question title */
+.question-meta{
+	margin-bottom: 18px;
+	color: var(--muted);
+}
+
+.options{
+	list-style: none; /* remove default list markers */
+	padding: 0; /* reset */
+	margin: 0; /* reset */
+	display: flex; /* vertical stack using flex */
+	flex-direction: column; /* stack options */
+	gap: 10px; /* spacing between options */
+}
+
+.option{
+	display: flex; /* horizontally align radio + label */
+	align-items: center; /* vertically center contents */
+	gap: 10px; /* space between radio and text */
+	padding: 10px; /* clickable area */
+	border-radius: 8px; /* rounded option boxes */
+	border: 1px solid transparent; /* default border, becomes visible on focus/active if needed */
+}
+
+.option input[type='radio']{
+	transform: scale(1.06); /* slightly larger radio button for accessibility */
+}
+
+.option:hover{
+	background: #f3f6fb; /* hover highlight for options */
+}
+
+.controls{
+	display: flex; /* align action buttons */
+	gap: 10px; /* spacing between buttons */
+	justify-content: flex-end; /* align controls to the right */
+	margin-top: 18px; /* space above controls */
+}
+
+/* Place the Previous button to the left while keeping other controls on the right */
+.controls #prevBtn{margin-right:auto}
+
+.btn{
+	padding: 10px 14px; /* comfortable clickable area */
+	border-radius: 8px; /* rounded buttons */
+	border: 1px solid #d1d5db; /* subtle border */
+	background: #fff; /* default button background */
+	cursor: pointer; /* indicate interactivity */
+	font-weight: bold; /* emphasize button text */
+}
+
+.btn:disabled{
+	opacity: 0.5; /* visually de-emphasize disabled buttons */
+	cursor: not-allowed; /* show disabled cursor */
+}
+
+.btn.primary{
+	background: var(--accent); /* primary action color */
+	color: #fff; /* white text on primary button */
+	border-color: transparent; /* remove border on primary */
+}
+
+.progress{
+	/* Progress line is hidden — per UI preference */
+	display: none;
+	margin-top: 12px; /* spacing (kept for reference) */
+	color: var(--muted); /* muted color for progress text (on white card) */
+	font-size: 0.95rem; /* slightly smaller than default */
+}
+
+.summary{
+	padding: 10px; /* inner spacing for summary */
+}
+
+.summary h2{
+	margin: 6px 0; /* compact heading spacing */
+}
+
+.wrong-list{
+	margin-top: 10px; /* space above list of wrong answers */
+}
+
+.wrong-item{
+	margin-bottom: 12px; /* spacing between wrong items */
+	padding: 10px; /* inner spacing */
+	border-left: 4px solid #ef4444; /* red accent to indicate incorrect */
+	background: #fff4f4; /* light red background */
+	border-radius: 6px; /* slightly rounded */
+}
+
+.correct-badge{
+	display: inline-block; /* let it size to content */
+	background: #ecfdf5; /* pale green background for correct badge */
+	color: #065f46; /* dark green text */
+	padding: 4px 8px; /* small pill padding */
+	border-radius: 999px; /* pill shape */
+	font-size: 0.85rem; /* slightly smaller text */
+}
+
+.small{
+	font-size: 0.9rem; /* helper text size */
+	color: var(--muted); /* muted color for text inside cards */
+}
+
+/* Welcome / modal overlay that appears on first load */
+.welcome{
+	position: fixed; /* overlay covers the viewport */
+	inset: 0; /* shorthand for top/right/bottom/left: 0 */
+	background: rgba(15,23,42,0.45); /* translucent backdrop */
+	display: flex; /* center content */
+	align-items: center;
+	justify-content: center;
+	padding: 20px; /* small padding on narrow screens */
+}
+
+.welcome-card{
+	background: var(--card); /* white card for welcome content */
+	padding: 22px; /* inner spacing */
+	border-radius: 10px; /* rounded corners */
+	max-width: 720px; /* limit width */
+	width: 100%; /* be responsive */
+	box-shadow: 0 12px 36px rgba(10,10,10,0.12); /* stronger elevation */
+}
+
+.welcome-card h2{
+	margin-top: 0; /* reset heading margin */
+}
+
+.welcome-card ol{
+	margin: 10px 0 0 18px; /* ordered list spacing */
+	color: #111; /* keep list text dark on white card */
+}
+
+.welcome[aria-hidden="true"]{display: none} /* hide welcome overlay when aria-hidden is true */

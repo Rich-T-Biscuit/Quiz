@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">  
+	<meta name="viewport" content="width=device-width,initial-scale=1"> 
+	<title>Interactive Quiz</title>
+	<link rel="stylesheet" href="src/index.css">
+</head>
+<body>
+	<main class="page"> 
+		<header>
+			<h1>Interactive Quiz</h1>
+			<p class="subtitle">Answer the questions — each question is shown on its own page.</p>
+		</header>
+
+		<section id="quiz-app" class="quiz-app">
+			<h2 class="visually-hidden">Quiz Application</h2>
+			<!-- Question content is rendered into #question-card by src/index.js -->
+			<div id="question-card" class="question-card">
+			</div>
+
+			<div class="controls">
+				<!-- Button IDs are coded from the prevBtn, nextBtn, submitBtn in src/index.js -->
+				<button id="prevBtn" class="btn" disabled>Previous</button>
+				<button id="nextBtn" class="btn">Next</button>
+				<button id="submitBtn" class="btn primary" style="display:none;">Submit</button>
+			</div>
+
+			<!-- Progress text is updated dynamically by the quiz script -->
+			<div class="progress" id="progress">Question 0 of 0</div>
+		</section>
+
+		<section id="welcome" class="welcome" aria-hidden="true">
+			<div class="welcome-card">
+				<h2>Welcome to the Quiz</h2>
+				<p class="small">Please read through the instructions below to get started.</p>
+				<ul>
+					<li>Each question will appear separately.</li>
+					<li>Use the <strong>Next</strong> and <strong>Previous</strong> buttons to navigate through the quiz.</li>
+					<li>You must select an answer before continuing to the next question.</li>
+					<li>There are four questions which have multiple correct answers, please select all correct answers.</li>
+					<li>When you reach the final question, click <strong>Submit</strong> to finish and see your results.</li>
+					<li>The summary will show how many answers were correct, your percentage score, and explanations for any question you answered incorrectly.</li>
+				</ul>
+				<div style="text-align:center">
+					<p>Good luck!</p>
+				</div>
+				<div style="margin-top:12px;text-align:right">
+					<button id="startBtn" class="btn primary">Start Quiz</button>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script src="src/index.js" defer></script>
+</body>
+</html>
