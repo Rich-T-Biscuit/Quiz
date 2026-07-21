@@ -48,43 +48,46 @@ Quiz/
 <br>
 **1)** Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
 
-From line 4, column 2; to line 4, column 25
->↩<head>↩	<meta charset="utf-8" />  ↩	<m
+An error had been made with the closing bracket at the end of the code:
 
-This was fixed by removing the closed bracket at the end of the code.
-&nbsp;	<meta charset="utf-8">  
+`<meta charset="utf-8">`
 
-<br>
 **2)** Info: Trailing slash on void elements has no effect and interacts badly with unquoted attribute values.
 
-From line 5, column 2; to line 5, column 70
--8" />  ↩	<meta name="viewport" content="width=device-width,initial-scale=1" /> ↩	<ti
+An error had been made with the closing bracket at the end of the code:
 
-This was fixed by removing the closed bracket at the end of the code.
-&nbsp;	<meta name="viewport" content="width=device-width,initial-scale=1"> 
+`<meta name="viewport" content="width=device-width,initial-scale=1">`
+
+**3)** Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections.
+
+To aid accessibility, this was fixed by adding a hidden header:
+
+`&lt;h2 class="visually-hidden"&gt;Quiz Application&lt;/h2&gt;`
 
 <br>
-**3)** Warning: Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed.
 
-From line 16, column 3; to line 16, column 42
-eader>↩↩		<section id="quiz-app" class="quiz-app">↩			<d
-
-To aid with accessibility, this was fixed by adding a hidden header.
-<br> `<h2 class="visually-hidden">Quiz Application</h2>`
-
+![HTML Validator](images/HTML_Validator.gif)
 
 ------------------------------------------
 
 CSS testing was done through [https://jigsaw.w3.org/css-validator/#validate_by_input](https://jigsaw.w3.org/css-validator/validator).
 
+![CSS Validator](images/W3C_CSS_Validator.gif)
 
 ------------------------------------------
 
 JavaScript testing was done through [https://jshint.com/](https://jshint.com/).
 
+![JavaScript Validator](images/Java_Validator.gif)
+
 ------------------------------------------
 
 Color contrast testing was done through [https://coolors.co/contrast-checker/111111-ffffff](https://coolors.co/contrast-checker/111111-ffffff).
+
+<p>Check Card</p>
+![Color Contrast - Card](images/Color_Contrast_Check_Card.gif)
+<p>Background</p>
+![Color Contrast - Background](images/Color_Contrast_Check_Subtitle.gif)
 
 -----------------------------------------
 
