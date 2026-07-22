@@ -9,7 +9,7 @@ The website can be accessed by this [Link](https://rich-t-biscuit.github.io/Quiz
 ## Introduction
 <p>The quiz will allow users to test their knowledge, learn something new and check their results after completion of the quiz.</p>
 
-## Features
+# Features
 <p>Key features of the online quiz includes:</p>
 
 - Randomised questions
@@ -58,14 +58,42 @@ Quiz/
 └── images/
 ```
 
-## Testing
-<p><b>Add screenshots & commentary for different sizes</b></p>
+# Testing
 
-------------------------
+### Compatability
+<p>I have tested the website on multiple browsers and sizes, utilising Chrome's built-in development tools, to ensure the functionality persists on different screen sizes:</p>
+- Google Chrome
 
+<p>Home screen</p>
+
+<p>Desktop Size (1919x1079)</p>
+
+![picture of the website being tested in Chrome](images/Chrome_Home.gif)
+
+<p>Resized to the same dimensions as a Pixel 7</p>
+
+![picture of the website being tested in Chrome](images/Chrome_Home_Pixel_7.gif)
+
+<p>Resized to the same dimensions as an iPhone 14 Pro Max</p>
+
+![picture of the website being tested in Chrome](images/Chrome_Home_iPhone_14_Pro_Max.gif)
+
+![picture of the website being tested in Chrome](images/Chrome_Questions.gif)
+
+![picture of the website being tested in Chrome](images/Chrome_Home.gif)
+
+- Edge
+- Firefox
+
+
+
+
+
+--------------------------------
 <p>Alongside friends and family test running my quiz to check for accessibility and errors, I utilised the below websites to test code written in HTML, CSS and JavaScript.</p>
 
-------------------------
+### HTML Testing 
+
 <br>HTML testing was done through [https://validator.w3.rg/#validate\_by\_input](https://validator.w3.org/detailed.html#validate-by-input).
 
 **Initial testing showed multiple warnings:**
@@ -93,19 +121,19 @@ To aid accessibility, this was fixed by adding a hidden header:
 
 ![HTML Validator](images/HTML_Validator.gif)
 
-------------------------------------------
+### CSS Testing
 
 CSS testing was done through [https://jigsaw.w3.org/css-validator/#validate_by_input](https://jigsaw.w3.org/css-validator/validator).
 
 ![CSS Validator](images/W3C_CSS_Validator.gif)
 
-------------------------------------------
+### JavaScript Testing
 
 JavaScript testing was done through [https://jshint.com/](https://jshint.com/).
 
 ![JavaScript Validator](images/Java_Validator.gif)
 
-------------------------------------------
+### Color Contrast Testing
 
 Color contrast testing was done through [https://coolors.co/contrast-checker/111111-ffffff](https://coolors.co/contrast-checker/111111-ffffff).
 
@@ -116,7 +144,7 @@ Color contrast testing was done through [https://coolors.co/contrast-checker/111
 
 ![Color Contrast - Background](images/Color_Subtitle.gif)
 
------------------------------------------
+### Performance Testing
 
 Lighthouse, within Chrome's built in development tools, was used to test for performance, accessibility, best practice and SEO.
 
