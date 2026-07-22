@@ -10,7 +10,32 @@ The website can be accessed by this [Link](https://rich-t-biscuit.github.io/Quiz
 <p>The quiz will allow users to test their knowledge, learn something new and check their results after completion of the quiz.</p>
 
 ## Features
-<p><b>Complete this section</b></p>
+<p>Key features of the online quiz includes:</p>
+
+- Randomised questions
+  - Utilising the Fisher-Yates shuffle algorithm
+- Randomised answer options
+- Multiple question types
+  - Single-answer multiple choice utilising radio buttons
+  - Multiple-answer questions utilising checkboxes
+- Start screen, with instruction for the user to follow to complete the quiz
+- Previous button, enabling users to return to earlier questions but disabled on the first question.
+- Next button, hidden on final question and disabled until an answer has been selected to prevent accidental skipping of questions.
+- Submit button, replaces Next button on final question and requires an answer to be selected before submission.
+- Quiz exists on a single page with answers stored in a userAnswers array.
+  - Returning to the previous question restores selctions automatically.
+- Multi-selection validation, checks multiple-answer questions by comparing the selected answers as sets to resolve answer order issue.
+- Progress tracking, quiz indicates the current question the user is on as well as the total question number.
+- Results screen, after submission the application displays:
+  - Number of correct answers
+  - Total score
+  - Percentage achieved
+  - List of incorrectly answered questions
+  - User's selected answers
+  - Correct answer
+  - Explanation for each incorrect answer
+- Restart function, on the results screen the user can restart the quiz without refreshing which will still result in a new random order of questions and answers.
+- HTML code used ensures the size of the quiz will change to match screen size to avoid any usability issues.
 
 ## Technologies Used
 <p>Built with the following technologies:</p>
