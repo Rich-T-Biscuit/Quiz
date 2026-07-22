@@ -120,7 +120,9 @@ Color contrast testing was done through [https://coolors.co/contrast-checker/111
 
 Lighthouse, within Chrome's built in development tools, was used to test for performance, accessibility, best practice and SEO.
 
-![Color Contrast - Card](images/Lighthouse.gif)
+<p align="center">
+  <img src="images/Lighthouse.gif" alt="Color Contrast - Card">
+</p>
 
 ----------------------------------------
 
