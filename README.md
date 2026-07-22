@@ -62,9 +62,20 @@ Quiz/
 
 ### Compatability
 <p>I have tested the website on multiple browsers and sizes, utilising Chrome's built-in development tools, to ensure the functionality persists on different screen sizes:</p>
+- Microsoft Edge
+
+<p>Desktop Size (1919x1079)</p>
+
+![picture of the website being tested in Chrome](images/Edge_Home.gif)
+
+- Mozilla Firefox
+<p>Desktop Size (1919x1079)</p>
+
+![picture of the website being tested in Chrome](images/Firefox_Home.gif)
+
 - Google Chrome
 
-<p>Home screen</p>
+  - Home screen
 
 <p>Desktop Size (1919x1079)</p>
 
@@ -77,6 +88,8 @@ Quiz/
 <p>Resized to the same dimensions as an iPhone 14 Pro Max</p>
 
 ![picture of the website being tested in Chrome](images/Chrome_Home_iPhone_14_Pro_Max.gif)
+
+  - Questions
 
 ![picture of the website being tested in Chrome](images/Chrome_Questions.gif)
 
