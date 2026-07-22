@@ -118,7 +118,9 @@ Color contrast testing was done through [https://coolors.co/contrast-checker/111
 
 -----------------------------------------
 
-## Lighthouse test for performance??
+Lighthouse, within Chrome's built in development tools, was used to test for performance, accessibility, best practice and SEO.
+
+![Color Contrast - Card](images/Lighthouse.gif)
 
 ----------------------------------------
 
