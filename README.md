@@ -13,8 +13,9 @@ The website can be accessed by this [Link](https://rich-t-biscuit.github.io/Quiz
 <p>Key features of the online quiz includes:</p>
 
 - Randomised questions
-  - Utilising the Fisher-Yates shuffle algorithm
+  - Utilises the Fisher-Yates shuffle algorithm
 - Randomised answer options
+  - Utilises the Fisher-Yates shuffle algorithm
 - Multiple question types
   - Single-answer multiple choice utilising radio buttons
   - Multiple-answer questions utilising checkboxes
