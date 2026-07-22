@@ -62,6 +62,9 @@ Quiz/
 
 ### Compatability
 <p>I have tested the website on multiple browsers and sizes, utilising Chrome's built-in development tools, to ensure the functionality persists on different screen sizes:</p>
+
+**Home screen**
+
 - Microsoft Edge
 
 <p>Desktop Size (1919x1079)</p>
@@ -75,32 +78,45 @@ Quiz/
 
 - Google Chrome
 
-  - Home screen
-
-<p>Desktop Size (1919x1079)</p>
+<p>Desktop Screen (1919x1079)</p>
 
 ![picture of the website being tested in Chrome](images/Chrome_Home.gif)
 
-<p>Resized to the same dimensions as a Pixel 7</p>
+<p>Pixel 7 Screen</p>
 
 ![picture of the website being tested in Chrome](images/Chrome_Home_Pixel_7.gif)
 
-<p>Resized to the same dimensions as an iPhone 14 Pro Max</p>
+<p>iPhone 14 Pro Max Screen</p>
 
 ![picture of the website being tested in Chrome](images/Chrome_Home_iPhone_14_Pro_Max.gif)
 
-  - Questions
+**Questions Pages**
+
+<p>Desktop Screen (1919x1079)</p>
 
 ![picture of the website being tested in Chrome](images/Chrome_Questions.gif)
 
-![picture of the website being tested in Chrome](images/Chrome_Home.gif)
+<p>Pixel 7 Screen</p>
 
-- Edge
-- Firefox
+![picture of the website being tested in Chrome](images/Chrome_Questions_Pixel_7.gif)
 
+<p>iPhone 14 Pro Max Screen</p>
 
+![picture of the website being tested in Chrome](images/Chrome_Questions_iPhone_14_Pro_Max.gif)
 
+**Results Page**
 
+<p>Desktop Screen (1919x1079)</p>
+
+![picture of the website being tested in Chrome](images/Chrome_Results.gif)
+
+<p>Pixel 7 Screen</p>
+
+![picture of the website being tested in Chrome](images/Chrome_Results_Pixel_7.gif)
+
+<p>iPhone 14 Pro Max Screen</p>
+
+![picture of the website being tested in Chrome](images/Chrome_Results_iPhone_14_Pro_Max.gif)
 
 --------------------------------
 <p>Alongside friends and family test running my quiz to check for accessibility and errors, I utilised the below websites to test code written in HTML, CSS and JavaScript.</p>
@@ -167,6 +183,15 @@ Lighthouse, within Chrome's built in development tools, was used to test for per
 
 ----------------------------------------
 
-## Author + Link to GitHub
+## Contact
+Richard Taylor<br>
 
+Feel free to reach out if you have any questions or feedback!<br>
+Thank you for visiting https://github.com/Rich-T-Biscuit/Quiz/
+
+----------------------------------------
 ## Credits
+
+- Stack Overflow (https://stackoverflow.com/) for the inspiration and foundational code.
+- ChatGPT (https://chatgpt.com/) for troubleshooting errors with the code.
+- Allwrightben (https://github.com/Allwrightben/starquiz/blob/main/README.md) for inspiration with the README.md file structure
